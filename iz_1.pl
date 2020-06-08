@@ -4,7 +4,7 @@ is_pent(P):-is_pent(0,P).
 is_pent(N,Pent):-pent(N,Pent),!.
 is_pent(N,P):-pent(N,Pent),Pent < P,N1 is N+1,is_pent(N1,P).
 
-task:-task(D,Pj,Pk),(D=1000000-> write("Такой пары чисел нет"); write("Pj = "),write(Pj),write(" Pk = "),write(Pk),write(" D = "),write(D)).
+task:-task(D,Pj,Pk),(D=1000000-> write(" takoi pary chisel net "); write("Pj = "),write(Pj),write(" Pk = "),write(Pk),write(" D = "),write(D)).
 % max number J and K is 817
 
 task(D,Pj,Pk):-task(1,2,0,0,Pj,Pk,1000000,D).
